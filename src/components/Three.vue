@@ -427,7 +427,7 @@ export default {
             const {
                 data: result
             } = await this.$http.get(
-                "https://www.maomin.club/fy/get/"
+                "/fy/get/"
             );
             this.chart.hideLoading();
             const {
