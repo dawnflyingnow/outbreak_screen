@@ -14,3 +14,11 @@ yarn run serve
 ```
 yarn build
 ```
+> nginx 增加代理设置
+```
+location /api {
+    rewrite ^.+api/?(.*)$ /$1 break;
+    include uwsgi_params;
+    proxy_pass https://www.xxx.com/;
+}
+```
