@@ -1,8 +1,8 @@
 module.exports = {
   devServer: {
-    host: "https://outbreak-screen.vercel.app",
+    host: "localhost",
     port: 8081,
-    https: true,
+    https: false,
     open: true,
     proxy: {
       "/api": {
