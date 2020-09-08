@@ -2,8 +2,8 @@ import Vue from 'vue'
 import axios from 'axios'
 // import router from '../router'
 
-axios.defaults.baseURL = process.env.VUE_APP_REQUEST_URL
-// axios.defaults.baseURL = '/api'  
+// axios.defaults.baseURL = process.env.VUE_APP_REQUEST_URL
+axios.defaults.baseURL = '/api'  
 
 // axios.create({
 //     baseURL: process.env.VUE_APP_REQUEST_URL

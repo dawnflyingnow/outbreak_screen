@@ -205,7 +205,7 @@ export default {
             const {
                 data: result
             } = await this.$http.get(
-                "/fy/get/"
+                "/fy/get"
             );
             this.chart.hideLoading();
             const {
