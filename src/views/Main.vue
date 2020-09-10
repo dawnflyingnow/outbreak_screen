@@ -65,6 +65,9 @@ export default class App extends Vue {
     //   beforeUpdate() {
     //     this.handleCommand(this.themeName);
     //   }
+    created() {
+        !localStorage.getItem("theme") && localStorage.setItem("theme", "dark")
+    }
 
     handleCommand(command) {
         this.$message.success("切换主题为：" + command);
